@@ -135,7 +135,7 @@ if (cluster.isMaster) {
         scroll      : cli.scroll,
         size        : cli.query_size,
         body        : {},
-        fields      : ['_parent', '_source', '_routing']
+        fields      : ['_parent', '_source', '_routing', '_timestamp']
       };
 
   if (range) {
