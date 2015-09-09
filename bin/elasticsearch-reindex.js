@@ -134,7 +134,8 @@ if (cluster.isMaster) {
         search_type : 'scan',
         scroll      : cli.scroll,
         size        : cli.query_size,
-        body        : {}
+        body        : {},
+        fields      : ['_parent', '_source', '_routing']
       };
 
   if (range) {
